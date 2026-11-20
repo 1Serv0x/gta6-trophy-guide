@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Legend — GTA VI Trophy Guide &amp; Tracker</title>
+<meta name="description" content="Offline guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI: cited guides, platinum roadmap, missable flags, filters and spoiler-safe mode.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-text">
+    <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+    <h1>Leonida Legend</h1>
+    <p class="tagline">The GTA VI trophy guide &amp; tracker. Every trophy with its official name, description and grade, a guide in our own words with its sources named, a platinum roadmap, and a checklist that remembers what you have earned — all offline.</p>
+  </div>
+  <div class="progress-card" aria-label="Platinum progress">
+    <p class="progress-count"><strong id="progress-count">0 of 55</strong> earned</p>
+    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="progress-bar"><span id="progress-fill"></span></div>
+    <p class="progress-grades" id="progress-grades"></p>
+    <p class="progress-next" id="progress-next"></p>
+  </div>
+</header>
+
+<nav class="toolbar" aria-label="Checklist controls">
+  <div class="toolbar-row">
+    <label class="search-label">Search <input id="search" type="search" placeholder="Search name, description or guide…" autocomplete="off"></label>
+    <label class="grade-label">Grade
+      <select id="grade-filter">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label class="spoiler-label"><input id="spoiler-toggle" type="checkbox" checked> Spoiler-safe mode: hide story &amp; hidden trophy names until earned</label>
+  </div>
+  <div class="toolbar-row">
+    <div class="kind-filters" role="group" aria-label="Filter by kind">
+      <button type="button" class="kind-btn active" data-kind="all">All kinds</button>
+      <button type="button" class="kind-btn" data-kind="story">Story</button>
+      <button type="button" class="kind-btn" data-kind="missable">Missable</button>
+      <button type="button" class="kind-btn" data-kind="collectibles">Collectibles</button>
+      <button type="button" class="kind-btn" data-kind="activities">Activities</button>
+      <button type="button" class="kind-btn" data-kind="online">Online</button>
+    </div>
+    <div class="toolbar-actions">
+      <button id="export-btn" type="button">Export progress</button>
+      <label class="import-label">Import progress <input id="import-file" type="file" accept=".json,application/json"></label>
+      <button id="reset-btn" type="button">Reset</button>
+    </div>
+  </div>
+  <p class="filter-status" id="filter-status"></p>
+</nav>
+
+<main class="layout">
+  <section class="checklist-section" aria-label="Trophy checklist">
+    <h2 id="checklist-heading">Checklist</h2>
+    <p class="hint">Tick a trophy when you earn it. Click any trophy to open its guide and sources on the right.</p>
+    <ul class="trophy-list" id="trophy-list"></ul>
+    <p class="empty-note" id="empty-note" hidden>No trophies match these filters. Try clearing the search or choosing another kind or grade.</p>
+  </section>
+
+  <aside class="detail-panel" id="detail-panel" aria-label="Trophy guide" aria-live="polite">
+    <p class="detail-empty">Select a trophy to see its guide and sources.</p>
+  </aside>
+</main>
+
+<section class="roadmap" id="roadmap" aria-label="Platinum roadmap">
+  <h2>Roadmap to the platinum</h2>
+  <p class="roadmap-intro">About 200 hours, one playthrough, no online trophies, difficulty about 4 out of 10 — the guides agree the grind is long but forgiving. The story takes 60–80 hours, the 100% checklist about 100 hours, and cleanup about 10–20 hours. Follow the stages in order.</p>
+  <div class="roadmap-rules">
+    <h3>Rules of the run</h3>
+    <ul>
+      <li><strong>No cheats.</strong> Using a cheat disables trophies and saving, so keep them off for the whole run.</li>
+      <li><strong>Keep manual saves.</strong> There is no mission replay and no New Game+, so save by hand at the start and end of every chapter — there are 15 manual save slots.</li>
+      <li><strong>Free roam after the story.</strong> Everything except one Chapter 1 meditation can still be done after the credits.</li>
+      <li><strong>Scan and study as you go.</strong> WAiNK-scan every new vehicle and study animals through binoculars from the start — 200 vehicles and 100 animals are needed later.</li>
+      <li><strong>One possibly missable trophy:</strong> Positive Mental Attitude. Do the Chapter 1 balcony meditation with Lucia; everything else can be cleaned up afterwards.</li>
+    </ul>
+  </div>
+  <ol class="roadmap-stages" id="roadmap-stages"></ol>
+</section>
+
+<section class="about" aria-label="About this guide">
+  <h2>About this guide</h2>
+  <p>GTA VI released on 19 November 2026, so this guide was built the day the trophy list surfaced. The 55 names, descriptions and grades are the official list as Exophase and PSNProfiles listed it on 18 November 2026, cross-checked on PlanetGTA6 — the two trackers agree on every name, description and grade. Each guide is written in our own words for this page and names the guide it draws on; where a method is still unconfirmed, the guide says so instead of inventing a location or a step. Links to sources open only if you click them — this page loads nothing from the internet and works with the network off.</p>
+  <h3>Where the list comes from</h3>
+  <ul class="source-list" id="list-sources"></ul>
+  <p class="fineprint">Unofficial fan guide. Not affiliated with Rockstar Games or Sony. No Rockstar logo, artwork or game screenshots are used here; the look is our own. Progress is stored only in your browser (localStorage) and in the file you export — nothing leaves your machine.</p>
+</section>
+
+<footer class="footer">
+  <p>Leonida Legend — an offline GTA VI trophy guide &amp; tracker. 55 trophies: 1 platinum, 2 gold, 6 silver, 46 bronze. 28 hidden, 1 possibly missable, 0 online.</p>
+</footer>
+
+<noscript><p class="noscript">This guide needs JavaScript to load its trophy data and save your checklist.</p></noscript>
+<script type="module" src="app.js"></script>
+</body>
+</html>
